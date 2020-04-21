@@ -11,6 +11,13 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
 import { SectionComponent } from './section/section.component';
+import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ServicesComponent } from './services/services.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,14 @@ import { SectionComponent } from './section/section.component';
     CarouselComponent,
     TableComponent,
     HomeComponent,
-    SectionComponent
+    SectionComponent,
+    AboutComponent,
+    ExperienceComponent,
+    PortfolioComponent,
+    ServicesComponent,
+    BlogComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

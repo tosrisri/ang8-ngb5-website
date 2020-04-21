@@ -7,3 +7,38 @@ body {
 .jumbotron {
     background: none;
 }
+
+.ccont1 h1#myName {
+    font-weight: 4em !important;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 9px 22px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
+    color: #232323;
+    letter-spacing: .5px;
+    line-height: inherit;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover, .btn:active {
+    background: #232323;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: rgba(0,0,0,0.3) 0px 3px 8px !important;
+}
+
+.sections {
+    padding: 5em 0;
+}
+.footer-cont {
+    background-color: #232323;
+}

@@ -1,0 +1,45 @@
+.ccont1 {
+    font-weight: normal;
+}
+.ccont1 .designation {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 0.75em 0;
+    width: fit-content;
+    font-weight: normal;
+}
+.ccont1 h1 {
+    font-size: 5em;
+    opacity: 0.4;
+    color: #202020;    
+    letter-spacing: 0.03em;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+}
+.ccont1 .social-links {
+    margin: 1em auto;
+}
+.ccont1 .social-links a {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 18px;
+    color: #999;
+}
+.ccont1 .download-resume {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0.5em 1.25em;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
+    color: #232323;
+    letter-spacing: .5px;
+    line-height: inherit;
+    width: auto;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.ccont1 .download-resume i {
+    margin-left: 0.6em;
+}

@@ -1,3 +1,6 @@
-.custom-bg {
-    background-color: #364961 !important;
+.sticky-nav {
+    background-color: #C60030 !important;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }

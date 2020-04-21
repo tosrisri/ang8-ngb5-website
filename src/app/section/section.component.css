@@ -1,0 +1,42 @@
+.home-section {
+    padding-top: 150px;
+    padding-bottom: 110px;
+	display:block;
+    position:relative;
+    z-index:120;
+}
+
+.inner-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+
+.home-section.nopadd-bot {
+    padding-bottom: 0;
+}
+
+/* ==========================
+Parallax
+============================= */
+
+#parallax1{
+	background-image: url(~/assets/img/parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display:block;
+    position:relative;
+    z-index:120;
+}
+
+#parallax1:after {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.9;
+	z-index: -1;
+}

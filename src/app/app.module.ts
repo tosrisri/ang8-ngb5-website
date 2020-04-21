@@ -9,6 +9,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ModalComponent } from './modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TableComponent } from './table/table.component';
+import { HomeComponent } from './home/home.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TableComponent } from './table/table.component';
     AccordionComponent,
     ModalComponent,
     CarouselComponent,
-    TableComponent
+    TableComponent,
+    HomeComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

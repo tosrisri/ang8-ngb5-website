@@ -1,0 +1,16 @@
+.footer-cont {
+    background-color: #35404E;
+}
+.footer-cont h6 {
+    width: 100%;
+}
+.copy-info {
+    background-color: #1b191d;
+    padding-top: 1em;
+}
+.sloka {
+    color: #999;
+}
+.text-white-25 {
+    color: rgba(255, 255, 255, 0.25);
+}

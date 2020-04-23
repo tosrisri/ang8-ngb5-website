@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@ng-bootstrap/ng-bootstrap": "~5.2.2",
+    "ag-grid-angular": "^23.0.3",
+    "ag-grid-community": "^23.0.2",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",

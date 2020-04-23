@@ -1,8 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.css';
 
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+/* global variables in the :root class */
+:root {
+    --pri-color: #6f6f6f;
+    --sec-color: #444;
+    /* --ter-color: #C60030; */
+    --ter-color: #D5003A;
+  }
+
 body {
     background-color: #E2EAEF;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.6;
+    color: var(--pri-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--sec-color);
+}
+p {
+    font-size: 1.3em;
 }
 .jumbotron {
     background: none;
@@ -16,16 +38,15 @@ body {
     display: inline-block;
     font-size: 14px;
     padding: 9px 22px;
-    background: #fff;
-    border: 2px solid #fff;
+    background: var(--ter-color);
+    border: 1px solid #fff;
     border-radius: 25px;
     box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
-    color: #232323;
+    color: whitesmoke;
     letter-spacing: .5px;
     line-height: inherit;
     width: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
@@ -36,9 +57,58 @@ body {
     box-shadow: rgba(0,0,0,0.3) 0px 3px 8px !important;
 }
 
+/* Section Titles */
+.section-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+  }
+  .section-title:after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+  }
+  .section-title:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 250px;
+  }
+  .section-title.style2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+  }
+  .section-title.style2:before {
+    content: none;
+  }
+  .section-title.white {
+    color: #fff;
+  }
+  .section-title.white:after {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .section-title.white:before {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
 .sections {
     padding: 5em 0;
-}
-.footer-cont {
-    background-color: #232323;
 }

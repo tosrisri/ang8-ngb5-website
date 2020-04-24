@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,18 +7,40 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PortfolioComponent implements OnInit {
 
+  gridOptions: {
+    defaultColDef: {
+        resizable: true
+    },
+    columnDefs: [
+        {field: 'name'},
+        {field: 'age'},
+        {field: 'address', resizable: false},
+    ]
+}
+
   columnDefs = [
-    {headerName: 'Make', field: 'make', sortable: true, checkboxSelection: true },
-    {headerName: 'Model', field: 'model', sortable: true, filter: true},
-    {headerName: 'Price', field: 'price', sortable: true, filter: true}
+    {headerName: 'S.No', field: 'sno', sortable: true, resizable: true},
+    {headerName: 'Category', field: 'cat', sortable: true, resizable: true},
+    {headerName: 'Client', field: 'client', sortable: true},
+    {headerName: 'Role', field: 'role', sortable: true},
+    {headerName: 'Duration (in months)', field: 'duration', sortable: true},
+    {headerName: 'Samples', field: 'sample'},
+    {headerName: 'URL', field: 'url'},
 ];
 
- rowData: any;
+rowData = [
+    { sno: 1, cat: 'UX Design', client: 'ZipErase', role: 'UX & UI Architect', duration: 2, sample:'', url: ''},
+];
 
-    constructor(private http: HttpClient) { }
+  constructor() { }
 
-    ngOnInit() {
-      this.rowData = this.http.get('https://raw.githubusercontent.com/ag-grid/ag-grid/master/grid-packages/ag-grid-docs/src/sample-data/rowData.json');
+  ngOnInit() {
+  }
+
+
+  
+  onGridReady(params) {
+    params.api.sizeColumnsToFit();
   }
 
 }

@@ -10,11 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ModalComponent } from './modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
 import { SectionComponent } from './section/section.component';
 import { AboutComponent } from './about/about.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceComponent, NgbdSortableHeader } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
@@ -28,7 +27,6 @@ import { FooterComponent } from './footer/footer.component';
     AccordionComponent,
     ModalComponent,
     CarouselComponent,
-    TableComponent,
     HomeComponent,
     SectionComponent,
     AboutComponent,
@@ -37,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     ServicesComponent,
     BlogComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    NgbdSortableHeader
   ],
   imports: [
     BrowserModule,

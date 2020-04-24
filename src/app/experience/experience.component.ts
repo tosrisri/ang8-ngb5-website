@@ -1,4 +1,5 @@
 import { Component, Directive, EventEmitter, Input, Output, QueryList, ViewChildren } from '@angular/core';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 interface Country {
   id: number;

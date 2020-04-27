@@ -1,24 +1,52 @@
 <section class="footer-cont">
     <div class="container">
-        <div class="row text-center py-5">
-            <h6 class="text-white-25">Colophon</h6>
-            <p class="small">This website portfolio was layed out on <a href="https://getbootstrap.com/" title="Bootstrap4"
-                    target="_blank">Bootstrap</a> framework. Handcoded using VSCode, fixed the parts with HTML5, painted
-                &amp; animated with care by CSS3, art work designed on sketch, Figma and finally tweeked with jQuery.
-                Uses fonts from Google Fonts <a href="https://fonts.google.com/specimen/Open+Sans/" title="Open Sans"
-                    target="_blank">Open Sans</a> and <a href="https://fonts.google.com/specimen/Libre+Baskerville/"
-                    title="Libre Baskerville" target="_blank">Libre Baskerville</a>. Iconogrpahy from <a
-                    href="https://www.flaticon.com/" title="Flaticon" target="_blank">Flaticons</a>. Optimized for
-                modern browsers <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">on all
-                    resolutions</a>. </p>
+        <div class="row py-5">
+            <div class="col-md-3">
+                <h6>Navgation</h6>
+                <nav class="footer-links">
+                    <a  [routerLink]="['/about']" (click)="isMenuCollapsed = true"
+                        title="About">About</a>
+                    <a  [routerLink]="['/experience']" (click)="isMenuCollapsed = true"
+                        title="Experience">Experience</a>
+                    <a  [routerLink]="['/portfolio']" (click)="isMenuCollapsed = true"
+                        title="Portfolio">Portfolio</a>
+                    <a  [routerLink]="['/services']" (click)="isMenuCollapsed = true"
+                        title="Services">Services</a>
+                    <a  [routerLink]="['/blog']" (click)="isMenuCollapsed = true" 
+                        title="Blog">Blog</a>
+                    <a  [routerLink]="['/contact']" (click)="isMenuCollapsed = true"
+                        title="Contact">Contact</a>
+                </nav>
+            </div>
+            <div class="col-md-6">
+                <h6>Colophon</h6>
+                <p class="small">This website portfolio was layed out on <a href="https://getbootstrap.com/"
+                        title="Bootstrap4" target="_blank">Bootstrap</a> framework. Handcoded using VSCode, fixed the
+                    parts with HTML5, painted
+                    &amp; animated with care by CSS3, art work designed on sketch, Figma and finally tweeked with
+                    jQuery.
+                    Uses fonts from Google Fonts <a href="https://fonts.google.com/specimen/Open+Sans/"
+                        title="Open Sans" target="_blank">Open Sans</a> and <a
+                        href="https://fonts.google.com/specimen/Libre+Baskerville/" title="Libre Baskerville"
+                        target="_blank">Libre Baskerville</a>. Iconogrpahy from <a href="https://www.flaticon.com/"
+                        title="Flaticon" target="_blank">Flaticons</a>. Optimized for
+                    modern browsers <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">on all
+                        resolutions</a>. </p>
+            </div>
+            <div class="col-md-3">
+                <h6>Social</h6>
+            </div>
         </div>
-       
+
+        <div class="row py-5">
+
+        </div>
+
     </div>
     <div class="container-fluid copy-info">
         <div class="row">
             <div class="w-100 text-center">
-                <p class="small">&copy; 2019 Srini. <span class="sloka">लोकाः समस्ताः सुखिनोभवंतु॥</span>
-                </p>
+                <p class="small"><span class="sloka">लोकाः समस्ताः सुखिनोभवंतु॥</span> &copy; 2019 Srini. </p>
             </div>
         </div>
     </div>

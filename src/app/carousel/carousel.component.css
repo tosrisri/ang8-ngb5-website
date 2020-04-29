@@ -43,3 +43,9 @@
 .ccont1 .download-resume i {
     margin-left: 0.6em;
 }
+.picsum-img-wrapper {
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+    max-height: 400px;
+}

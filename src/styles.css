@@ -15,6 +15,7 @@
 
 body {
     background-color: #E2EAEF;
+    background-color: #F8F9FA;
     font-size: 1em;
     font-weight: 100;
     line-height: 1.6;
@@ -24,8 +25,15 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color: var(--sec-color);
 }
+h1, h2, .h1, .h2 {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+}
 p {
-    font-size: 1.3em;
+    font-size: 1.15em;
 }
 .jumbotron {
     background: none;
@@ -88,7 +96,14 @@ p {
     margin: 0 auto;
     width: 250px;
   }
-  .section-title.style2:after {
+  .sub-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .sub-title:after {
     content: "";
     width: 50px;
     height: 2px;
@@ -97,18 +112,19 @@ p {
     bottom: 0;
     left: calc(50% - 30px);
   }
-  .section-title.style2:before {
-    content: none;
+  .sub-title:before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
   }
-  .section-title.white {
-    color: #fff;
-  }
-  .section-title.white:after {
-    background: rgba(255, 255, 255, 0.6);
-  }
-  .section-title.white:before {
-    background: rgba(255, 255, 255, 0.2);
-  }
+
 
 .sections {
     padding: 5em 0;
@@ -147,4 +163,8 @@ ngbd-table-filtering span.ngb-highlight {
 /* Complete table demo */
 ngbd-table-complete span.ngb-highlight {
   background-color: yellow;
+}
+
+a:hover {
+  transition: .3s all ease-out;
 }

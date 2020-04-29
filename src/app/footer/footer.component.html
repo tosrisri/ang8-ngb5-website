@@ -1,9 +1,9 @@
 <section class="footer-cont">
     <div class="container">
         <div class="row py-5">
-            <div class="col-md-3">
+            <div class="col-lg-3 footer-links small text-center">
                 <h6>Navgation</h6>
-                <nav class="footer-links">
+                
                     <a  [routerLink]="['/about']" (click)="isMenuCollapsed = true"
                         title="About">About</a>
                     <a  [routerLink]="['/experience']" (click)="isMenuCollapsed = true"
@@ -16,24 +16,19 @@
                         title="Blog">Blog</a>
                     <a  [routerLink]="['/contact']" (click)="isMenuCollapsed = true"
                         title="Contact">Contact</a>
-                </nav>
+                
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 text-center">
                 <h6>Colophon</h6>
-                <p class="small">This website portfolio was layed out on <a href="https://getbootstrap.com/"
-                        title="Bootstrap4" target="_blank">Bootstrap</a> framework. Handcoded using VSCode, fixed the
-                    parts with HTML5, painted
-                    &amp; animated with care by CSS3, art work designed on sketch, Figma and finally tweeked with
-                    jQuery.
-                    Uses fonts from Google Fonts <a href="https://fonts.google.com/specimen/Open+Sans/"
-                        title="Open Sans" target="_blank">Open Sans</a> and <a
-                        href="https://fonts.google.com/specimen/Libre+Baskerville/" title="Libre Baskerville"
-                        target="_blank">Libre Baskerville</a>. Iconogrpahy from <a href="https://www.flaticon.com/"
-                        title="Flaticon" target="_blank">Flaticons</a>. Optimized for
-                    modern browsers <a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">on all
-                        resolutions</a>. </p>
+                <p class="small">Built with <span class="heart">❤️</span> using <br/>
+                <img src="assets/img/bootstrap.svg" height="22" title="Bootstrap" alt="Bootstrap"> <a href="https://getbootstrap.com/" title="Bootstrap4" target="_blank">Bootstrap</a>,
+                <a title="NG Bootstrap" href="https://ng-bootstrap.github.io/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 512 512" class="align-middle"><defs><linearGradient id="a"><stop offset="0" stop-color="#0143a3"></stop><stop offset="1" stop-color="#0273d4"></stop></linearGradient><linearGradient xlink:href="#a" id="b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.33396 0 0 1.33396 404.049 -265.9)" x1="-111" y1="967.862" x2="-110.5" y2="617.362"></linearGradient></defs><path d="M255.71 558.533l207.07 81.226-20.02 272.853-185.907 113.26-187.05-114.404L50.356 640.33z" fill="url(#b)" fill-rule="evenodd" transform="translate(0 -540.362)" stroke="#fff" stroke-width="20"></path><path d="M255.142 18.01l1.716 467.404 185.675-113.635 19.725-272.724z" fill-rule="evenodd" fill-opacity=".098"></path><path d="M220.151 247.738v77.444h45.872q23.078 0 34.12-9.485 11.186-9.628 11.186-29.308 0-19.82-11.185-29.165-11.043-9.486-34.12-9.486H220.15zm0-86.93v63.71h42.333q20.953 0 31.147-7.786 10.336-7.929 10.336-24.069 0-15.998-10.336-23.927-10.194-7.928-31.147-7.928H220.15zm-28.6-23.503h73.056q32.705 0 50.403 13.592 17.697 13.592 17.697 38.651 0 19.397-9.06 30.865-9.062 11.468-26.618 14.3 21.096 4.53 32.705 18.971 11.751 14.3 11.751 35.82 0 28.316-19.255 43.749-19.254 15.432-54.791 15.432h-75.887v-211.38z" fill="#fff"></path></svg><span>NG Bootstrap</span></a>,               
+                <img src="assets/img/angular.png" height="20" title="Angular" alt="Angular"> <a href="https://angular.io/" target="_blank">Angular</a>, 
+                <img src="assets/img/css.png" height="20" title="CSS" alt="CSS"> <a href="https://www.w3.org/Style/CSS/" target="_blank">CSS3</a>, <img src="assets/img/gf.png" height="20" title="Google Fonts" alt="Google Fonts"> <a href="https://fonts.google.com/specimen/Open+Sans/" title="Open Sans" target="_blank">Google Fonts</a>, 
+                <img src="assets/img/flaticon.svg" height="16" title="Angular" alt="Angular">  <a href="https://www.flaticon.com/"
+                    title="Flaticon" target="_blank"></a>.  </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <h6>Social</h6>
             </div>
         </div>
@@ -45,9 +40,12 @@
     </div>
     <div class="container-fluid copy-info">
         <div class="row">
-            <div class="w-100 text-center">
-                <p class="small"><span class="sloka">लोकाः समस्ताः सुखिनोभवंतु॥</span> &copy; 2019 Srini. </p>
+            <div class="col-lg-4"><a [routerLink]="" (click)="window.history.back();" class="bnav">⇠ prev</a></div>
+            
+            <div class="col-lg-4 text-center">
+                <p class="small"><span class="sloka">लोकाः समस्ताः सुखिनोभवंतु॥ &copy; 2019 Srini.</span> </p>
             </div>
+            <div class="col-lg-4"><a href="#" (click)="window.history.forward();" class="bnav float-right">next ⇢</a></div>
         </div>
     </div>
 </section>

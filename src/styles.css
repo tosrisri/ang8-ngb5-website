@@ -45,25 +45,23 @@ p {
 
 .btn {
     display: inline-block;
-    font-size: 14px;
-    padding: 9px 22px;
+    padding: 0.75em 1.25em;
     background: var(--ter-color);
-    border: 1px solid #fff;
-    border-radius: 25px;
-    box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important;
-    color: whitesmoke;
+    /* box-shadow: rgba(0,0,0,0.1) 0px 2px 1px !important; */
+    color: white;
     letter-spacing: .5px;
     line-height: inherit;
     width: auto;
     font-weight: 400;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    border: 1px solid #999;
+    border-radius: 0 !important;
 }
 .btn:hover, .btn:active {
     background: #232323;
     color: #fff;
-    border-color: #fff;
-    box-shadow: rgba(0,0,0,0.3) 0px 3px 8px !important;
+    border-color: #fff !important;    
 }
 
 /* Section Titles */
@@ -167,4 +165,17 @@ ngbd-table-complete span.ngb-highlight {
 
 a:hover {
   transition: .3s all ease-out;
+}
+
+.carousel-inner::after { 
+  display: block;
+  content: "";
+  background: url("/assets/img/background-image-overlay-full.png") top left repeat;
+  z-index: 1;
+  border: 0px solid red;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 450px;
 }

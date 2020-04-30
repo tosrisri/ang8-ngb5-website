@@ -101,16 +101,8 @@ p {
     text-align: center;
     margin-bottom: 2em;
   }
-  .sub-title:after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 30px);
-  }
-  .sub-title:before {
+
+ .sub-title:before {
     content: "";
     width: 80%;
     height: 1px;
@@ -121,7 +113,16 @@ p {
     right: 0;
     margin: 0 auto;
     width: 200px;
-  }
+}
+.sub-title:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
 
 
 .sections {

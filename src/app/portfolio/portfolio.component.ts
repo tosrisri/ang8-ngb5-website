@@ -25,11 +25,14 @@ export class PortfolioComponent implements OnInit {
     {headerName: 'Role', field: 'role', sortable: true},
     {headerName: 'Duration (in months)', field: 'duration', sortable: true},
     {headerName: 'Samples', field: 'sample'},
-    {headerName: 'URL', field: 'url'},
+    {headerName: 'URL', field: 'url', cellRenderer: function(params) {
+      return '<a href="https://www.ziperase.com/" target="_blank">'+ params.value+'</a>'
+  }},
 ];
 
 rowData = [
-    { sno: 1, cat: 'UX Design', client: 'ZipErase', role: 'UX & UI Architect', duration: 2, sample:'', url: ''},
+    { sno: 1, cat: 'UX Design', client: 'ZipErase', role: 'UX & UI Architect', duration: 2, sample:'', url: 'ZipErase'},
+    { sno: 2, cat: 'UI Design', client: 'SilverSheet', role: 'UX & UI Architect', duration: 4, sample:'NA', url: 'SilverSheet'}
 ];
 
   constructor() { }

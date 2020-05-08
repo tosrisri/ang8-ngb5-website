@@ -3,16 +3,16 @@
 }
 
 .ccont1 .designation {
-    border-top: 1px dotted #888;
-    border-bottom: 1px dotted #888;
-    margin: 1em auto;
-    padding: 0.75em 0;
+    border-top: 1px dotted #aaa;
+    border-bottom: 1px dotted #aaa;
+    margin: 0.1em auto;
+    padding: 0.1em 0;
     width: fit-content;
     font-weight: 100;
 }
 .ccont1 h1 {
     font-size: 5em;
-    color: #eee;    
+    color: #fff;    
     letter-spacing: 0.03em;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
     font-weight: 400;
@@ -30,13 +30,18 @@
     font-weight: 100;
 }
 .ccont1 .social-links {
-    margin: 1em auto;
+    margin: 0.5em auto 1em;
 }
 .ccont1 .social-links a {
     display: inline-block;
-    margin: 0 1em;
-    font-size: 18px;
-    color: #999;
+    margin: 0 0.5em;
+    font-size: 1em;
+    padding: 0.5em;
+    color: #fff;
+}
+.ccont1 .social-links a:hover {
+    color: #C60030;
+    text-shadow: 1px 1px 2px #000;
 }
 .ccont1 .download-resume {
     display: inline-block;
@@ -65,3 +70,7 @@
     max-height: 400px;
 }
 
+.freelancer {
+    color: yellow;
+    font-weight: 200;
+}

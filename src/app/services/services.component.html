@@ -1,86 +1,200 @@
 <section class="sections">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3 class="section-title">Experience</h3>
-            </div>
-        </div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Services</h2>
+      </div>
     </div>
 
 
-      <div class="container">
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="" id="ServicesAcc" [closeOthers]="true">
+      <ngb-panel title="User Experience">
+        <ng-template ngbPanelContent>          
+            <h4>UX Audit/Expert Review</h4>
+            <p class="lead">Is your product not converting? With an Audit I will rapidly identify the UX flaws in your project.</p>
+            
+            <hr>
+            <div class="row">
+            <div class="col"><h6>What is it?</h6>
+              <p>A UX Audit is a cost effective way to get fast expert advice to pinpoint crucial flaws in your digital
+                product. The audit will address obstacles and will give you a report with clear prioritised actionable
+                advice to help you turn your product into a positive meaningful experience that will lead to loyal
+                users, increased conversion rates and user satisfaction.</p></div>
+            <div class="col"><h6>Who is it for?</h6>
+              <ul>
+                <li>Startups</li>
+                <li>Product owners</li>
+                <li>Investors</li>
+                <li>Digital agencies</li>
+                <li>Anyone interested in optimising their digital product or experience</li>
+              </ul></div>
+            <div class="col"><h6>HOW DOES IT WORK?</h6>
+              <p>A UX Audit uses various tools, best practises and metrics to help you too <br>rapidly improve your
+                product.</p>
+               </div>
+            </div>
 
-        <div class="row">
-          <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="wow fadeInLeft animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="pe-7s-monitor pe-5x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5>Web Design</h5>
-                  <p>
-                    Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
-                    duo.
-                  </p>
-                  <a href="#" class="btn btn-skin">Learn more</a>
-                </div>
-              </div>
+            <div class="row">
+              <div class="col">
+                <h6>Below an overview of the process:</h6>
+                <ol>
+                  <li>During a 30 minute discovery (video) call we will discuss the project, business requirements and
+                    user goals.</li>
+                  <li>I will execute the audit using a variety of tools, methods &amp; metrics.‍</li>
+                  <li>During a second 30 minute (video) call we will discuss my initial findings.‍</li>
+                  <li>I'll create a report that includes prioritised recommendations, clear actionable advice and
+                    wireframe concepts.</li>
+                  <li>During our final 30 minute (video) call we will go through my report and you will have the
+                    opportunity to ask any final questions and discuss an optional follow up project.</li>
+                </ol></div>
+              <div class="col"><h6>EXAMPLE SCENARIOS</h6>
+              <ul>
+                <li>Improve your user onboarding process</li>
+                <li>Streamline your check out process</li>
+                <li>Optimise complex user dashboards</li>
+                <li>Applying UX best practises to your product</li>
+              </ul></div>
             </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="pe-7s-camera pe-5x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5>Photography</h5>
-                  <p>
-                    Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
-                    duo.
-                  </p>
-                  <a href="#" class="btn btn-skin">Learn more</a>
-                </div>
-              </div>
+
+            <div class="row">
+              <div class="col text-center"><h6>Turn around time varies between 1 week to 2 weeks depending on scope & project complexity</h6>
+              <p><a  href="#" target="_blank" class="btn btn-hallow">Inquire</a></p></div>
+              
             </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="pe-7s-note pe-5x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5>Graphic design</h5>
-                  <p>
-                    Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
-                    duo.
-                  </p>
-                  <a href="#" class="btn btn-skin">Learn more</a>
-                </div>
-              </div>
+          
+        </ng-template>
+      </ngb-panel>
+
+      <ngb-panel title="Website Design & Development ">
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+          officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+          tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+          helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+          Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+          accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Photography">
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+          officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+          tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+          helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+          Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+          accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Videography">
+        <ng-template ngbPanelContent>
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+          officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+          tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+          helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+          Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+          accusamus
+          labore sustainable VHS.
+        </ng-template>
+      </ngb-panel>
+
+    </ngb-accordion>
+
+
+
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <div class="wow fadeInLeft animated" data-wow-delay="0.2s"
+          style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+          <div class="service-box">
+            <div class="service-icon">
+              <span class="pe-7s-monitor pe-5x"></span>
             </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="wow fadeInRight animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="pe-7s-phone pe-5x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5>Mobile apps</h5>
-                  <p>
-                    Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
-                    duo.
-                  </p>
-                  <a href="#" class="btn btn-skin">Learn more</a>
-                </div>
-              </div>
+            <div class="service-desc">
+              <h5>Web Design</h5>
+              <p>
+                Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
+                duo.
+              </p>
+              <a href="#" class="btn btn-skin">Learn more</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <div class="wow fadeInUp animated" data-wow-delay="0.2s"
+          style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+          <div class="service-box">
+            <div class="service-icon">
+              <span class="pe-7s-camera pe-5x"></span>
+            </div>
+            <div class="service-desc">
+              <h5>Photography</h5>
+              <p>
+                Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
+                duo.
+              </p>
+              <a href="#" class="btn btn-skin">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <div class="wow fadeInUp animated" data-wow-delay="0.2s"
+          style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+          <div class="service-box">
+            <div class="service-icon">
+              <span class="pe-7s-note pe-5x"></span>
+            </div>
+            <div class="service-desc">
+              <h5>Graphic design</h5>
+              <p>
+                Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
+                duo.
+              </p>
+              <a href="#" class="btn btn-skin">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <div class="wow fadeInRight animated" data-wow-delay="0.2s"
+          style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+          <div class="service-box">
+            <div class="service-icon">
+              <span class="pe-7s-phone pe-5x"></span>
+            </div>
+            <div class="service-desc">
+              <h5>Mobile apps</h5>
+              <p>
+                Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem
+                duo.
+              </p>
+              <a href="#" class="btn btn-skin">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </section>
+</section>

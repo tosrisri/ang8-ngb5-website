@@ -14,12 +14,13 @@ export class PortfolioComponent implements OnInit {
     columnDefs: [
         {field: 'name'},
         {field: 'age'},
-        {field: 'address', resizable: false},
+        {field: 'pyear', resizable: false},
     ]
 }
 
   columnDefs = [
-    {headerName: 'S.No', field: 'sno', sortable: true, resizable: true},
+    {headerName: 'S.No', field: 'sno', sortable: true},
+    {headerName: 'Project Year', field: 'pyear', sortable: true, resizable: false},
     {headerName: 'Category', field: 'cat', sortable: true, resizable: true},
     {headerName: 'Client', field: 'client', sortable: true},
     {headerName: 'Role', field: 'role', sortable: true},
@@ -31,8 +32,8 @@ export class PortfolioComponent implements OnInit {
 ];
 
 rowData = [
-    { sno: 1, cat: 'UX Design', client: 'ZipErase', role: 'UX & UI Architect', duration: 2, sample:'', url: 'ZipErase'},
-    { sno: 2, cat: 'UI Design', client: 'SilverSheet', role: 'UX & UI Architect', duration: 4, sample:'NA', url: 'SilverSheet'}
+    { sno: 1, pyear: 2020, cat: 'UX Design', client: 'ZipErase', role: 'UX & UI Architect', duration: 2, sample:'', url: 'ZipErase'},
+    { sno: 2, pyear: 2019, cat: 'UI Design', client: 'SilverSheet', role: 'UX & UI Architect', duration: 4, sample:'NA', url: 'SilverSheet'}
 ];
 
   constructor() { }
